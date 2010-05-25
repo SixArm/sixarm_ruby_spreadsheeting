@@ -1,0 +1,1099 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Module: Spreadsheeting</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (S)</a> &raquo; 
+    
+    
+    <span class="title">Spreadsheeting</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: Spreadsheeting 
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/sixarm_ruby_spreadsheeting.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+  <h2>Instance Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#export_date-instance_method" title="#export_date (instance method)">- (String) <strong>export_date</strong>(date) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Convert a date to a string format &#8220;YYYY/MM/DD&#8221;.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#export_date_or_note-instance_method" title="#export_date_or_note (instance method)">- (String) <strong>export_date_or_note</strong>(date, note = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Corresponds to import_date_or_note.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#export_flag-instance_method" title="#export_flag (instance method)">- (String) <strong>export_flag</strong>(flag) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Convert true/false to &#8220;+&#8221;/&#8221;-&#8221;.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#export_flag_or_note-instance_method" title="#export_flag_or_note (instance method)">- (String) <strong>export_flag_or_note</strong>(flag, note = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Corresponds to import_flag_or_note.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#import_date-instance_method" title="#import_date (instance method)">- (Date) <strong>import_date</strong>(input) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Parse a string to a date, with some cleanup.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#import_date_or_note-instance_method" title="#import_date_or_note (instance method)">- (Array&lt;Date, String&gt;) <strong>import_date_or_note</strong>(input) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Parse an imput that may be a date (e.g. &#8220;2007/12/31&#8221;) or a note
+(e.g. freeform text) into an array.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#import_flag-instance_method" title="#import_flag (instance method)">- (Boolean) <strong>import_flag</strong>(input) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Parse various input words (e.g. &#8220;Yes&#8221;, &#8220;No&#8221;,
+&#8220;On&#8221;, &#8220;Off&#8221;) to true or false.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#import_flag_or_note-instance_method" title="#import_flag_or_note (instance method)">- (Array&lt;Boolean, String&gt;) <strong>import_flag_or_note</strong>(input) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Parse an imput that may be a flag (e.g. true/false) or a note (e.g.
+freeform text) into an array.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="export_date-instance_method">
+  
+    - (<tt>String</tt>) <strong>export_date</strong>(date) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Convert a date to a string format &#8220;YYYY/MM/DD&#8220;
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <span class='name'>flag</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+&#8220;+&#8221; or &#8220;-&#8220;
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 52</span>
+
+<span class='def def kw'>def</span> <span class='export_date identifier id'>export_date</span><span class='lparen token'>(</span><span class='date identifier id'>date</span><span class='rparen token'>)</span>
+  <span class='date identifier id'>date</span><span class='dot token'>.</span><span class='strftime identifier id'>strftime</span><span class='lparen token'>(</span><span class='string val'>&quot;%Y/%m/%d&quot;</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="export_date_or_note-instance_method">
+  
+    - (<tt>String</tt>) <strong>export_date_or_note</strong>(date, note = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Corresponds to import_date_or_note
+</p>
+<ul>
+<li>date is non-null => &#8220;2007/12/31&#8220;
+
+</li>
+<li>date is null => note
+
+</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  <span class='d identifier id'>d</span><span class='assign token'>=</span><span class='Date constant id'>Date</span><span class='dot token'>.</span><span class='parse identifier id'>parse</span><span class='lparen token'>(</span><span class='string val'>'1/1/2007'</span><span class='rparen token'>)</span>
+  <span class='export_date_or_note identifier id'>export_date_or_note</span><span class='lparen token'>(</span><span class='d identifier id'>d</span><span class='comma token'>,</span><span class='string val'>'hello'</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'2007-01-01'</span>
+  <span class='export_date_or_note identifier id'>export_date_or_note</span><span class='lparen token'>(</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span><span class='string val'>'hello'</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'hello'</span>
+</pre>
+    
+  </div>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+a date formatted like &#8220;2007/12/31&#8221; or freeform string note
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="#import_date_or_note-instance_method" title="Spreadsheeting#import_date_or_note (method)">#import_date_or_note</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 71</span>
+
+<span class='def def kw'>def</span> <span class='export_date_or_note identifier id'>export_date_or_note</span><span class='lparen token'>(</span><span class='date identifier id'>date</span><span class='comma token'>,</span><span class='note identifier id'>note</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='date identifier id'>date</span><span class='eq op'>==</span><span class='nil nil kw'>nil</span> <span class='question op'>?</span> <span class='note identifier id'>note</span> <span class='colon op'>:</span> <span class='export_date identifier id'>export_date</span><span class='lparen token'>(</span><span class='date identifier id'>date</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="export_flag-instance_method">
+  
+    - (<tt>String</tt>) <strong>export_flag</strong>(flag) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Convert true/false to &#8220;+&#8221;/&#8221;-&#8220;
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <span class='name'>flag</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+&#8220;+&#8221; or &#8220;-&#8220;
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 21</span>
+
+<span class='def def kw'>def</span> <span class='export_flag identifier id'>export_flag</span><span class='lparen token'>(</span><span class='flag identifier id'>flag</span><span class='rparen token'>)</span>
+  <span class='flag identifier id'>flag</span> <span class='integer val'>? </span><span class='string val'>'+'</span> <span class='colon op'>:</span> <span class='string val'>'-'</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="export_flag_or_note-instance_method">
+  
+    - (<tt>String</tt>) <strong>export_flag_or_note</strong>(flag, note = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Corresponds to import_flag_or_note
+</p>
+<ul>
+<li>flag==true => &#8220;+&#8220;
+
+</li>
+<li>flag==false => &#8220;-&#8220;
+
+</li>
+<li>flag==nil => note
+
+</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  <span class='export_flag_or_note identifier id'>export_flag_or_note</span><span class='lparen token'>(</span><span class='true true kw'>true</span><span class='comma token'>,</span><span class='string val'>&quot;hello&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;+&quot;</span>
+  <span class='export_flag_or_note identifier id'>export_flag_or_note</span><span class='lparen token'>(</span><span class='false false kw'>false</span><span class='comma token'>,</span><span class='string val'>&quot;hello&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;-&quot;</span>
+  <span class='export_flag_or_note identifier id'>export_flag_or_note</span><span class='lparen token'>(</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span><span class='string val'>&quot;hello&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;hello&quot;</span>
+</pre>
+    
+  </div>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+&#8220;+&#8221; or &#8220;-&#8221; or freeform string note
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="#import_flag_or_note-instance_method" title="Spreadsheeting#import_flag_or_note (method)">#import_flag_or_note</a></li>
+    
+      <li><a href="#export_flag-instance_method" title="Spreadsheeting#export_flag (method)">#export_flag</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 42</span>
+
+<span class='def def kw'>def</span> <span class='export_flag_or_note identifier id'>export_flag_or_note</span><span class='lparen token'>(</span><span class='flag identifier id'>flag</span><span class='comma token'>,</span><span class='note identifier id'>note</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='flag identifier id'>flag</span><span class='eq op'>==</span><span class='nil nil kw'>nil</span> <span class='question op'>?</span> <span class='note identifier id'>note</span> <span class='colon op'>:</span> <span class='export_flag identifier id'>export_flag</span><span class='lparen token'>(</span><span class='flag identifier id'>flag</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="import_date-instance_method">
+  
+    - (<tt>Date</tt>) <strong>import_date</strong>(input) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Parse a string to a date, with some cleanup.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>, <tt>#to_s</tt>, <tt>nil</tt>)</span>
+      
+      
+        <span class='name'>input</span>
+      
+      
+      
+        &mdash;
+        
+to parse, e.g. &#8220;2007/12/31&#8220;
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Date</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+the parsed date
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="#import_date_or_note-instance_method" title="Spreadsheeting#import_date_or_note (method)">#import_date_or_note</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 83</span>
+
+<span class='def def kw'>def</span> <span class='import_date identifier id'>import_date</span><span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='nil nil kw'>nil</span> <span class='if if_mod kw'>if</span> <span class='input identifier id'>input</span><span class='eq op'>==</span><span class='nil nil kw'>nil</span>
+  <span class='input_s identifier id'>input_s</span> <span class='assign token'>=</span> <span class='input identifier id'>input</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='dot token'>.</span><span class='strip identifier id'>strip</span>
+  <span class='return return kw'>return</span> <span class='nil nil kw'>nil</span> <span class='if if_mod kw'>if</span> <span class='input identifier id'>input</span><span class='eq op'>==</span><span class='string val'>''</span>
+  <span class='return return kw'>return</span> <span class='Date constant id'>Date</span><span class='dot token'>.</span><span class='parse identifier id'>parse</span><span class='lparen token'>(</span><span class='input_s identifier id'>input_s</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="import_date_or_note-instance_method">
+  
+    - (<tt>Array&lt;Date, String&gt;</tt>) <strong>import_date_or_note</strong>(input) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Parse an imput that may be a date (e.g. &#8220;2007/12/31&#8221;) or a note
+(e.g. freeform text) into an array.
+</p>
+<p>
+There&#8217;s a common import use case where a column can be of two types:
+</p>
+<ul>
+<li>a date, in a variety of format like &#8220;Jan 1, 2008&#8221;,
+&#8220;1/1/2008&#8221;, etc.
+
+</li>
+<li>a note, in plain text
+
+</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  <span class='import_date_or_note identifier id'>import_date_or_note</span><span class='lparen token'>(</span><span class='string val'>'1/1/2007'</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='Date constant id'>Date</span><span class='lparen token'>(</span><span class='integer val'>2007</span><span class='comma token'>,</span><span class='integer val'>01</span><span class='comma token'>,</span><span class='integer val'>01</span><span class='rparen token'>)</span><span class='comma token'>,</span><span class='string val'>''</span><span class='rbrack token'>]</span>
+  <span class='import_date_or_note identifier id'>import_date_or_note</span><span class='lparen token'>(</span><span class='string val'>'hello'</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span><span class='string val'>'hello'</span><span class='rbrack token'>]</span>
+</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>, <tt>String</tt>, <tt>#to_s</tt>, <tt>nil</tt>)</span>
+      
+      
+        <span class='name'>input</span>
+      
+      
+      
+        &mdash;
+        
+typically &#8220;Yes&#8221;, &#8220;No&#8221;, &#8220;On&#8221;,
+&#8220;Off&#8221;, etc.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Date, String&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+the parsed output [date, note]
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="#export_date_or_note-instance_method" title="Spreadsheeting#export_date_or_note (method)">#export_date_or_note</a></li>
+    
+      <li><a href="#import_date-instance_method" title="Spreadsheeting#import_date (method)">#import_date</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109
+110
+111
+112
+113
+114</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 107</span>
+
+<span class='def def kw'>def</span> <span class='import_date_or_note identifier id'>import_date_or_note</span><span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='rparen token'>)</span>
+  <span class='begin begin kw'>begin</span>
+    <span class='d identifier id'>d</span><span class='assign token'>=</span><span class='import_date identifier id'>import_date</span><span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='rparen token'>)</span>
+  <span class='rescue rescue kw'>rescue</span>
+    <span class='d identifier id'>d</span><span class='assign token'>=</span><span class='nil nil kw'>nil</span>
+  <span class='end end kw'>end</span>
+  <span class='return return kw'>return</span> <span class='d identifier id'>d</span> <span class='question op'>?</span> <span class='lbrack token'>[</span><span class='d identifier id'>d</span><span class='comma token'>,</span><span class='string val'>''</span><span class='rbrack token'>]</span> <span class='colon op'>:</span> <span class='lbrack token'>[</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span><span class='input identifier id'>input</span><span class='rbrack token'>]</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="import_flag-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>import_flag</strong>(input) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Parse various input words (e.g. &#8220;Yes&#8221;, &#8220;No&#8221;,
+&#8220;On&#8221;, &#8220;Off&#8221;) to true or false.
+</p>
+<p>
+There&#8217;s a typical import use case where a column is a boolean, in a
+variety of formats like &#8220;X&#8221; for on, &#8220;Y&#8221; for yes,
+&#8220;T&#8221; for true, etc.
+</p>
+<p>
+We use these rules:
+</p>
+<ul>
+<li>x y yes t true on + => true
+
+</li>
+<li>blank n no f false off - => false
+
+</li>
+<li>anything else => nil
+
+</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='string val'>&quot;Yes&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='true true kw'>true</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='string val'>&quot;No&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='false false kw'>false</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='string val'>&quot;X&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='true true kw'>true</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='string val'>&quot;&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='false false kw'>false</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='string val'>&quot;Hello&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='nil nil kw'>nil</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='true true kw'>true</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='true true kw'>true</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='false false kw'>false</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='true true kw'>true</span>
+  <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='nil nil kw'>nil</span>
+</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>, <tt>String</tt>, <tt>#to_s</tt>, <tt>nil</tt>)</span>
+      
+      
+        <span class='name'>input</span>
+      
+      
+      
+        &mdash;
+        
+typically &#8220;Yes&#8221;, &#8220;No&#8221;, &#8220;On&#8221;,
+&#8220;Off&#8221;, etc.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+the parsed output
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="#import_flag_or_note-instance_method" title="Spreadsheeting#import_flag_or_note (method)">#import_flag_or_note</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 143</span>
+
+<span class='def def kw'>def</span> <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='input identifier id'>input</span> <span class='if if_mod kw'>if</span> <span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='eq op'>==</span><span class='true true kw'>true</span> <span class='or or kw'>or</span> <span class='input identifier id'>input</span><span class='eq op'>==</span><span class='false false kw'>false</span> <span class='or or kw'>or</span> <span class='input identifier id'>input</span><span class='eq op'>==</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='case case kw'>case</span> <span class='input identifier id'>input</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='dot token'>.</span><span class='strip identifier id'>strip</span><span class='dot token'>.</span><span class='downcase identifier id'>downcase</span>
+  <span class='when when kw'>when</span> <span class='string val'>'x'</span><span class='comma token'>,</span><span class='string val'>'y'</span><span class='comma token'>,</span><span class='string val'>'yes'</span><span class='comma token'>,</span><span class='string val'>'t'</span><span class='comma token'>,</span><span class='string val'>'true'</span><span class='comma token'>,</span><span class='string val'>'on'</span><span class='comma token'>,</span><span class='string val'>'+'</span>
+    <span class='return return kw'>return</span> <span class='true true kw'>true</span>
+  <span class='when when kw'>when</span> <span class='string val'>''</span><span class='comma token'>,</span><span class='string val'>'n'</span><span class='comma token'>,</span><span class='string val'>'no'</span><span class='comma token'>,</span><span class='string val'>'f'</span><span class='comma token'>,</span><span class='string val'>'false'</span><span class='comma token'>,</span><span class='string val'>'off'</span><span class='comma token'>,</span><span class='string val'>'-'</span>
+    <span class='return return kw'>return</span> <span class='false false kw'>false</span>
+  <span class='else else kw'>else</span> 
+    <span class='return return kw'>return</span> <span class='nil nil kw'>nil</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="import_flag_or_note-instance_method">
+  
+    - (<tt>Array&lt;Boolean, String&gt;</tt>) <strong>import_flag_or_note</strong>(input) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Parse an imput that may be a flag (e.g. true/false) or a note (e.g.
+freeform text) into an array.
+</p>
+<p>
+There&#8217;s a typical import use case where a column can contain two
+different data types:
+</p>
+<ul>
+<li>a boolean, in a variety of formats (see <em>import_flag</em>)
+
+</li>
+<li>a note, in plain text
+
+</li>
+</ul>
+<p>
+We need to separate these two.
+</p>
+<p>
+We use these rules:
+</p>
+<ul>
+<li>x y yes t true on + => [true, &#8217;&#8217;]
+
+</li>
+<li>blank n no f false off - => [false, &#8217;&#8217;]
+
+</li>
+<li>any other string => [nil, note]
+
+</li>
+<li>nil => [nil, nil]
+
+</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='string val'>&quot;Yes&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='true true kw'>true</span><span class='comma token'>,</span><span class='string val'>&quot;&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='string val'>&quot;No&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='false false kw'>false</span><span class='comma token'>,</span><span class='string val'>&quot;&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='string val'>&quot;X&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='true true kw'>true</span><span class='comma token'>,</span><span class='string val'>&quot;&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='string val'>&quot;&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='false false kw'>false</span><span class='comma token'>,</span><span class='string val'>&quot;&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='string val'>&quot;Hello&quot;</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span><span class='string val'>&quot;Hello&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='true true kw'>true</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='true true kw'>true</span><span class='comma token'>,</span><span class='string val'>&quot;&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='false false kw'>false</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='false false kw'>false</span><span class='comma token'>,</span><span class='string val'>&quot;&quot;</span><span class='rbrack token'>]</span>
+  <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrack token'>[</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span><span class='nil nil kw'>nil</span><span class='rbrack token'>]</span>
+</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>, <tt>String</tt>, <tt>#to_s</tt>, <tt>nil</tt>)</span>
+      
+      
+        <span class='name'>input</span>
+      
+      
+      
+        &mdash;
+        
+typically &#8220;Yes&#8221;, &#8220;No&#8221;, &#8220;On&#8221;,
+&#8220;Off&#8221;, etc.
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array&lt;Boolean, String&gt;</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+the parsed output [flag, note]
+
+
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="#export_flag_or_note-instance_method" title="Spreadsheeting#export_flag_or_note (method)">#export_flag_or_note</a></li>
+    
+      <li><a href="#import_flag-instance_method" title="Spreadsheeting#import_flag (method)">#import_flag</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+187
+188
+189
+190
+191</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 187</span>
+
+<span class='def def kw'>def</span> <span class='import_flag_or_note identifier id'>import_flag_or_note</span><span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='lbrack token'>[</span><span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='nil nil kw'>nil</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='eq op'>==</span><span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='flag identifier id'>flag</span> <span class='assign token'>=</span> <span class='import_flag identifier id'>import_flag</span><span class='lparen token'>(</span><span class='input identifier id'>input</span><span class='rparen token'>)</span>
+  <span class='return return kw'>return</span> <span class='lbrack token'>[</span><span class='flag identifier id'>flag</span><span class='comma token'>,</span> <span class='flag identifier id'>flag</span><span class='eq op'>==</span><span class='nil nil kw'>nil</span> <span class='question op'>?</span> <span class='input identifier id'>input</span> <span class='colon op'>:</span> <span class='string val'>''</span><span class='rbrack token'>]</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Thu Mar 18 11:50:46 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
