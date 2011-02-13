@@ -337,12 +337,12 @@ Convert a date to a string format &#8220;YYYY/MM/DD&#8220;
       <pre class="lines">
 
 
-52
-53
-54</pre>
+56
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id export_date'>export_date</span><span class='lparen'>(</span><span class='id date'>date</span><span class='rparen'>)</span>
   <span class='id date'>date</span><span class='period'>.</span><span class='id strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%Y/%m/%d</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
@@ -422,12 +422,12 @@ a date formatted like &#8220;2007/12/31&#8221; or freeform string note
       <pre class="lines">
 
 
-71
-72
-73</pre>
+75
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id export_date_or_note'>export_date_or_note</span><span class='lparen'>(</span><span class='id date'>date</span><span class='comma'>,</span><span class='id note'>note</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='id date'>date</span><span class='op'>==</span><span class='kw'>nil</span> <span class='op'>?</span> <span class='id note'>note</span> <span class='op'>:</span> <span class='id export_date'>export_date</span><span class='lparen'>(</span><span class='id date'>date</span><span class='rparen'>)</span>
@@ -495,12 +495,12 @@ Convert true/false to &#8220;+&#8221;/&#8221;-&#8220;
       <pre class="lines">
 
 
-21
-22
-23</pre>
+25
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 25</span>
 
 <span class='kw'>def</span> <span class='id export_flag'>export_flag</span><span class='lparen'>(</span><span class='id flag'>flag</span><span class='rparen'>)</span>
   <span class='id flag'>flag</span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>+</span><span class='tstring_end'>'</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>-</span><span class='tstring_end'>'</span></span>
@@ -586,12 +586,12 @@ export_flag_or_note(nil,&quot;hello&quot;) =&gt; &quot;hello&quot;</pre>
       <pre class="lines">
 
 
-42
-43
-44</pre>
+46
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 46</span>
 
 <span class='kw'>def</span> <span class='id export_flag_or_note'>export_flag_or_note</span><span class='lparen'>(</span><span class='id flag'>flag</span><span class='comma'>,</span><span class='id note'>note</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='id flag'>flag</span><span class='op'>==</span><span class='kw'>nil</span> <span class='op'>?</span> <span class='id note'>note</span> <span class='op'>:</span> <span class='id export_flag'>export_flag</span><span class='lparen'>(</span><span class='id flag'>flag</span><span class='rparen'>)</span>
@@ -672,15 +672,15 @@ the parsed date
       <pre class="lines">
 
 
-83
-84
-85
-86
 87
-88</pre>
+88
+89
+90
+91
+92</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id import_date'>import_date</span><span class='lparen'>(</span><span class='id input'>input</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id input'>input</span><span class='op'>==</span><span class='kw'>nil</span>
@@ -791,17 +791,17 @@ the parsed output [date, note]
       <pre class="lines">
 
 
-107
-108
-109
-110
 111
 112
 113
-114</pre>
+114
+115
+116
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 107</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 111</span>
 
 <span class='kw'>def</span> <span class='id import_date_or_note'>import_date_or_note</span><span class='lparen'>(</span><span class='id input'>input</span><span class='rparen'>)</span>
   <span class='kw'>begin</span>
@@ -926,20 +926,20 @@ the parsed output
       <pre class="lines">
 
 
-143
-144
-145
-146
 147
 148
 149
 150
 151
 152
-153</pre>
+153
+154
+155
+156
+157</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 147</span>
 
 <span class='kw'>def</span> <span class='id import_flag'>import_flag</span><span class='lparen'>(</span><span class='id input'>input</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='id input'>input</span> <span class='kw'>if</span> <span class='lparen'>(</span><span class='id input'>input</span><span class='op'>==</span><span class='kw'>true</span> <span class='kw'>or</span> <span class='id input'>input</span><span class='op'>==</span><span class='kw'>false</span> <span class='kw'>or</span> <span class='id input'>input</span><span class='op'>==</span><span class='kw'>nil</span><span class='rparen'>)</span>
@@ -1085,14 +1085,14 @@ the parsed output [flag, note]
       <pre class="lines">
 
 
-187
-188
-189
-190
-191</pre>
+191
+192
+193
+194
+195</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 187</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_spreadsheeting.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id import_flag_or_note'>import_flag_or_note</span><span class='lparen'>(</span><span class='id input'>input</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='lbracket'>[</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='lparen'>(</span><span class='id input'>input</span><span class='op'>==</span><span class='kw'>nil</span><span class='rparen'>)</span>
@@ -1109,9 +1109,9 @@ the parsed output [flag, note]
 </div>
     
     <div id="footer">
-  Generated on Mon Dec 13 18:02:21 2010 by 
+  Generated on Sat Feb 12 16:22:38 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.3 (ruby-1.9.2).
+  0.6.4 (ruby-1.9.2).
 </div>
 
   </body>
