@@ -1,0 +1,1 @@
+789d0bc009d0dac48682b106f77bf1db7826ab45ff67956b2b3526af2c9c732295e75ff493e7c3f07c169bd7d6c7257d8cfbf813af1ded797eadbd26fb0a076f  sixarm_ruby_spreadsheeting-1.0.4.gem

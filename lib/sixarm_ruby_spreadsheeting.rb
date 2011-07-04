@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 =begin rdoc
 
 = SixArm.com » Ruby » Spreadsheeting gem has import & export helpers for CSV, TSV, Excel, etc.
@@ -18,7 +19,7 @@ module Spreadsheeting
 
 
   # Convert true/false to "+"/"-"
-  # 
+  #
   # @param [Boolean] flag
   # @return [String] "+" or "-"
 
@@ -93,7 +94,7 @@ module Spreadsheeting
 
 
   # Parse an imput that may be a date (e.g. "2007/12/31") or a note (e.g. freeform text) into an array.
-  # 
+  #
   # There's a common import use case where a column can be of two types:
   # - a date, in a variety of format like "Jan 1, 2008", "1/1/2008", etc.
   # - a note, in plain text
@@ -107,7 +108,7 @@ module Spreadsheeting
   #
   # @see #export_date_or_note
   # @see #import_date
-  
+
   def import_date_or_note(input)
     begin
       d=import_date(input)
@@ -151,7 +152,7 @@ module Spreadsheeting
       return true
     when '','n','no','f','false','off','-'
       return false
-    else 
+    else
       return nil
     end
   end
