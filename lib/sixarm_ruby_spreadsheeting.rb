@@ -1,17 +1,6 @@
 # -*- coding: utf-8 -*-
-
 =begin rdoc
-
-= SixArm.com » Ruby » Spreadsheeting gem has import & export helpers for CSV, TSV, Excel, etc.
-
-Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright (c) 2006-2011 Joel Parker Henderson
-License:: See LICENSE.txt file
-
-String helpers for importing, exporting, and parsing spreadsheet data.
-
-This is useful for reading and writing files in CSV, TSV, Excel, etc.
-
+Please see README.rdoc
 =end
 
 

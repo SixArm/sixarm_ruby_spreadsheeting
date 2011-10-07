@@ -1,11 +1,6 @@
 Gem::Specification.new do |s|
 
-  name                = "sixarm_ruby_spreadsheeting" 
-  top_files           = [".gemtest","Rakefile","README.rdoc","LICENSE.txt"]
-  lib_files           = ["lib/#{NAME}.rb"]
-  test_files          = ["test/#{NAME}_test.rb"]
-
-  s.name              = NAME
+  s.name              = "sixarm_ruby_spreadsheeting" 
   s.summary           = "SixArm.com » Ruby » Spreadsheeting import export helpers, to parse and prettify"
   s.version           = "1.0.6"
   s.author            = "SixArm"
@@ -17,6 +12,10 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.require_path      = 'lib'
   s.has_rdoc          = true
+
+  top_files           = [".gemtest", "CHANGELOG.txt", "INSTALL.txt", "LICENSE.txt", "Rakefile", "README.rdoc", "VERSION"]
+  lib_files           = ["lib/#{s.name}.rb"]
+  test_files          = ["test/#{s.name}_test.rb"]
 
   s.files             = top_files + lib_files + test_files
   s.test_files        = test_files
