@@ -2,17 +2,27 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta name="Content-Type" content="text/html; charset=utf-8" />
-<title>Documentation by YARD 0.6.4</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.7.5
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '';
   if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
 
   </head>
   <body>
@@ -31,37 +41,149 @@
 </div>
 
       <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
 </div>
-
       <div class="clear"></div>
     </div>
     
     <iframe id="search_frame"></iframe>
     
-    <div id="content"><div id='filecontents'><h1>SixArm.com » Ruby » Spreadsheeting gem has import &amp; export helpers for CSV, TSV, Excel, etc.</h1>
-<table>
-<tr><td valign="top">Author</td><td><p>
-Joel Parker Henderson, joelparkerhenderson@gmail.com
-</p>
-</td></tr>
-<tr><td valign="top">Copyright</td><td><p>
-Copyright &#169; 2006-2011 Joel Parker Henderson
-</p>
-</td></tr>
-<tr><td valign="top">License</td><td><p>
-See LICENSE.txt file
-</p>
-</td></tr>
-</table>
+    <div id="content"><div id='filecontents'><h1>SixArm.com » Ruby » <br> Spreadsheeting gem has import &amp; export helpers for CSV, TSV, Excel, etc.</h1>
+
+<ul>
+<li>Docs: <a href="http://sixarm.com/sixarm_ruby_spreadsheeting/doc">http://sixarm.com/sixarm_ruby_spreadsheeting/doc</a></li>
+<li>Repo: <a href="http://github.com/sixarm/sixarm_ruby_spreadsheeting">http://github.com/sixarm/sixarm_ruby_spreadsheeting</a></li>
+<li>Email: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></li>
+</ul>
+
+<h2>Introduction</h2>
+
+<p>String helpers for importing, exporting, and parsing spreadsheet data.</p>
+
+<p>This is useful for reading and writing files in CSV, TSV, Excel, etc.</p>
+
+<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_spreadsheeting/doc">http://sixarm.com/sixarm_ruby_spreadsheeting/doc</a></p>
+
+<p>Want to help? We&#39;re happy to get pull requests.</p>
+
+<h2>Install quickstart</h2>
+
+<p>Gem:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_spreadsheeting'>sixarm_ruby_spreadsheeting</span>
+</code></pre>
+
+<p>Bundler:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_spreadsheeting</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>~&gt;1.1.0</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<p>Require:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_spreadsheeting</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<h2>Install with security (optional)</h2>
+
+<p>To enable high security for all our gems:</p>
+
+<pre class="code ruby"><code>wget http://sixarm.com/sixarm.pem
+gem cert --add sixarm.pem
+gem sources --add http://sixarm.com
+</code></pre>
+
+<p>To install with high security:</p>
+
+<pre class="code ruby"><code>gem install sixarm_ruby_spreadsheeting --test --trust-policy HighSecurity
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Some spreadsheet programs use cells that can have different types of data, such as:</p>
+
+<ul>
+<li>a date like &quot;2010/12/31&quot;</li>
+<li>a boolean flag like &quot;+&quot; or &quot;-&quot;</li>
+<li>a freeform text note like &quot;Hello&quot;</li>
+</ul>
+
+<p>This gem has methods for parsing and printing these individually and in combinations.</p>
+
+<h2>Example</h2>
+
+<p>Require:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_spreadsheeting</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<p>To import a spreadsheet cell&#39;s text that may be a date or a freeform note:</p>
+
+<pre class="code ruby"><code>date, note = import_date_or_note(&quot;2010/12/31&quot;) 
+=&gt; [&lt;Date: 2010-12-31&gt;, nil]
+
+date, note = import_date_or_note(&quot;Hello&quot;) 
+=&gt; [nil, &quot;Hello&quot;]
+</code></pre>
+
+<p>To export either a date or a note to spreadsheet cell text:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_date'>date</span> <span class='op'>=</span> <span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span>
+<span class='id identifier rubyid_note'>note</span> <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='id identifier rubyid_export_date_or_note'>export_date_or_note</span><span class='lparen'>(</span><span class='id identifier rubyid_date'>date</span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; &quot;2010/12/31&quot;
+</span>
+<span class='id identifier rubyid_date'>date</span> <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='id identifier rubyid_note'>note</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Hello</span><span class='tstring_end'>&quot;</span></span>
+<span class='id identifier rubyid_export_date_or_note'>export_date_or_note</span><span class='lparen'>(</span><span class='id identifier rubyid_date'>date</span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; &quot;Hello&quot;
+</span></code></pre>
+
+<h2>Changes</h2>
+
+<ul>
+<li>2012-03-22 1.1.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.</li>
+<li>2011-10-06 1.0.6 Updates for gem publishing</li>
+</ul>
+
+<h2>License</h2>
+
+<p>You may choose any of these open source licenses:</p>
+
+<ul>
+<li>Apache License</li>
+<li>BSD License</li>
+<li>CreativeCommons License, Non-commercial Share Alike</li>
+<li>GNU General Public License Version 2 (GPL 2)</li>
+<li>GNU Lesser General Public License (LGPL)</li>
+<li>MIT License</li>
+<li>Perl Artistic License</li>
+<li>Ruby License</li>
+</ul>
+
+<p>The software is provided &quot;as is&quot;, without warranty of any kind, 
+express or implied, including but not limited to the warranties of 
+merchantability, fitness for a particular purpose and noninfringement. </p>
+
+<p>In no event shall the authors or copyright holders be liable for any 
+claim, damages or other liability, whether in an action of contract, 
+tort or otherwise, arising from, out of or in connection with the 
+software or the use or other dealings in the software.</p>
+
+<p>This license is for the included software that is created by SixArm;
+some of the included software may have its own licenses, copyrights, 
+authors, etc. and these do take precedence over the SixArm license.</p>
+
+<p>Copyright (c) 2005-2012 Joel Parker Henderson</p>
 </div></div>
     
     <div id="footer">
-  Generated on Sat Feb 12 16:22:38 2011 by 
+  Generated on Wed Mar 21 14:05:50 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.4 (ruby-1.9.2).
+  0.7.5 (ruby-1.9.3).
 </div>
 
   </body>

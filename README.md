@@ -18,13 +18,13 @@ Want to help? We're happy to get pull requests.
 
 ## Install quickstart
 
-Install:
+Gem:
 
     gem install sixarm_ruby_spreadsheeting
 
 Bundler:
 
-    gem "sixarm_ruby_spreadsheeting", "~>1.0.6"
+    gem "sixarm_ruby_spreadsheeting", "~>1.1.0"
 
 Require:
 
@@ -82,7 +82,7 @@ To export either a date or a note to spreadsheet cell text:
 
 ## Changes
 
-* 2012-03-14 1.0.6 Update docs, tests
+* 2012-03-22 1.1.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.
 * 2011-10-06 1.0.6 Updates for gem publishing
 
 
@@ -112,4 +112,4 @@ This license is for the included software that is created by SixArm;
 some of the included software may have its own licenses, copyrights, 
 authors, etc. and these do take precedence over the SixArm license.
 
-Copyright (c) 2005-2013 Joel Parker Henderson
+Copyright (c) 2005-2012 Joel Parker Henderson
