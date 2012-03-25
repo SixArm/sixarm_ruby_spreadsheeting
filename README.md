@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> Spreadsheeting gem has import & export helpers for CSV, TSV, Excel, etc.
 
-* Docs: <http://sixarm.com/sixarm_ruby_spreadsheeting/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_spreadsheeting/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_spreadsheeting>
 * Repo: <http://github.com/sixarm/sixarm_ruby_spreadsheeting>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
