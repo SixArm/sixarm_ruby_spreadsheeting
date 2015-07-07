@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
-require 'simplecov'
+require "minitest/autorun"
+require "simplecov"
 SimpleCov.start
-require 'date'
-require 'sixarm_ruby_spreadsheeting'
+require "date"
+require "sixarm_ruby_spreadsheeting"
 
 describe Spreadsheeting do
 
