@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_spreadsheeting"
-  s.summary           = "SixArm.com » Ruby » Spreadsheeting helpers"
+  s.summary           = "SixArm.com → Ruby → Spreadsheeting helpers"
   s.description       = "Spreadsheeting provides spreadsheet import/export helpers to parse and prettify data"
   s.version           = "1.1.1"
 
