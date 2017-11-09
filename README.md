@@ -3,7 +3,7 @@
 * Doc: <http://sixarm.com/sixarm_ruby_spreadsheeting/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_spreadsheeting>
 * Repo: <http://github.com/sixarm/sixarm_ruby_spreadsheeting>
-<!--HEADER-SHUT-->
+<!--header-shut-->
 
 
 ## Introduction
@@ -17,29 +17,27 @@ For docs go to <http://sixarm.com/sixarm_ruby_spreadsheeting/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--INSTALL-OPEN-->
+<!--install-opent-->
 
 ## Install
 
-To install using a Gemfile, add this:
+### Gem
 
-    gem "sixarm_ruby_spreadsheeting", ">= 1.1.1", "< 2"
+Run this command in your shell or terminal:
 
-To install using the command line, run this:
+    gem install sixarm_ruby_spreadsheeting
 
-    gem install sixarm_ruby_spreadsheeting -v ">= 1.1.1, < 2"
+Or add this to your Gemfile:
 
-To install using the command line with high security, run this:
+    gem 'sixarm_ruby_spreadsheeting'
 
-    wget http://sixarm.com/sixarm.pem
-    gem cert --add sixarm.pem && gem sources --add http://sixarm.com
-    gem install sixarm_ruby_spreadsheeting -v ">= 1.1.1, < 2" --trust-policy HighSecurity
+### Require
 
 To require the gem in your code:
 
-    require "sixarm_ruby_spreadsheeting"
+    require 'sixarm_ruby_spreadsheeting'
 
-<!--INSTALL-SHUT-->
+<!--install-shut-->
 
 
 ## Details
